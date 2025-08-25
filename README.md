@@ -6,31 +6,31 @@ PBR (Policy Based Route) merupakan fitur yang berfungsi untuk memetakan jalur. K
 
 ![](r12.PNG)
 
-**Konfigurasi**
+**Konfigurasi**   
 Pada tahap ini, pastikan kita sudah melakukan basic config (IP Address, DNS, NAT, dll). Kemudian kita bisa coba untuk lakukan konfigurasi PBR. Pada kasus ini kita akan konfigurasi PBR1 menggunakan Route Rules.
 
 # konfigurasi policy based route failover netwatch mikrotik
-1. seting dhcp client dulu disini isp saya dari ether 1 dan wlan1
+1. seting dhcp client dulu disini isp saya dari ether 1 dan wlan1   
    pilih menu ip > dhcp client klik add 
 
 ![](r3.PNG)
 
-2. lalu buat ip address untuk LAN1 dan LAN2
+2. lalu buat ip address untuk LAN1 dan LAN2   
    di menu ip > address 
 
 ![](r5.PNG)
 
-3. berikutnya buat dhcp server untuk ether 2 dan 3 kenpa yang ether2 saya merah karena tida terhubug/blm tercolokkan
+3. berikutnya buat dhcp server untuk ether 2 dan 3 kenpa yang ether2 saya merah karena tida terhubug/blm tercolokkan  
    pilih menu ip > dhcp server
 
 ![](r4.PNG)
 
-4.  lalu setting firewall dengan action kedua nya menggunakan masquerade
+4.  lalu setting firewall dengan action kedua nya menggunakan masquerade    
     di menu ip > firewall
 
 ![](r6.PNG)
 
-5. jika sudah maka kita akan melakukan konfigurasi berikutnta yaitu route
+5. jika sudah maka kita akan melakukan konfigurasi berikutnta yaitu route    
    pilih menu ip > routes > rules konfigurasi seperti gambar berikut
 
 ![](r7.PNG)
@@ -47,7 +47,7 @@ Pada tahap ini, pastikan kita sudah melakukan basic config (IP Address, DNS, NAT
 
 ![](r10.PNG)
 
-9. konfigurasi netwatch
+9. konfigurasi netwatch    
    di menu tools > netwatch
 
    ![](r11.PNG)
